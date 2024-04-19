@@ -1,0 +1,3 @@
+﻿1>------ 已启动生成: 项目: Plugin.MeasureCircle, 配置: Debug Any CPU ------
+1>  Plugin.MeasureCircle -> E:\MyVision\000_exe\Plugins\Plugin.ShowStr.dll
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========

@@ -1,0 +1,62 @@
+﻿1>------ 已启动全部重新生成: 项目: Helper, 配置: Debug Any CPU ------
+1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets(133,9): warning MSB3884: 无法找到规则集文件“MinimumRecommendedRules.ruleset”。
+1>E:\MyVision\Helper\ExcelHelper.cs(137,30,137,32): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\ExcelHelper.cs(185,30,185,32): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\ToolStripMenu.cs(155,37,155,39): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\HMath.cs(111,30,111,32): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\HMath.cs(144,30,144,32): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\HMath.cs(238,30,238,32): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\HMath.cs(261,30,261,32): warning CS0168: The variable 'ex' is declared but never used
+1>E:\MyVision\Helper\configHelper.cs(16,44,16,51): warning CS0649: Field 'configHelper.mConfig' is never assigned to, and will always have its default value null
+1>  Helper -> E:\MyVision\000_exe\Helper.dll
+2>------ 已启动全部重新生成: 项目: CPublicDefine, 配置: Debug Any CPU ------
+2>E:\MyVision\CPublicDefine\HImageExt.cs(355,29,355,31): warning CS0168: The variable 'ex' is declared but never used
+2>  CPublicDefine -> E:\MyVision\000_exe\CPublicDefine.dll
+3>------ 已启动全部重新生成: 项目: HWindow_HE, 配置: Debug Any CPU ------
+4>------ 已启动全部重新生成: 项目: VisionCore, 配置: Debug Any CPU ------
+5>------ 已启动全部重新生成: 项目: HalconControl, 配置: Debug Any CPU ------
+3>E:\MyVision\HWindow_HE\HWindow_HE.cs(292,30,292,31): warning CS0168: The variable 'e' is declared but never used
+3>E:\MyVision\HWindow_HE\HWindow_HE.cs(358,34,358,36): warning CS0168: The variable 'ex' is declared but never used
+3>E:\MyVision\HWindow_HE\Model\HWndCtrl.cs(1135,30,1135,31): warning CS0168: The variable 'e' is declared but never used
+3>E:\MyVision\HWindow_HE\Model\ROIRectangle1.cs(52,24,52,29): warning CS0414: The field 'ROIRectangle1.color' is assigned but its value is never used
+3>  HWindow_HE -> E:\MyVision\000_exe\HWindow_Tool.dll
+6>------ 已启动全部重新生成: 项目: HEViewer, 配置: Debug Any CPU ------
+6>E:\MyVision\HEViewer\jig\SerialTool.cs(43,30,43,32): warning CS0168: The variable 'ex' is declared but never used
+6>E:\MyVision\HEViewer\Frm_HEViewer.cs(107,33,107,34): warning CS0219: The variable 'i' is assigned but its value is never used
+6>E:\MyVision\HEViewer\Frm_HEViewer.cs(112,38,112,40): warning CS0168: The variable 'ex' is declared but never used
+6>  HEViewer -> E:\MyVision\000_exe\HEViewer.dll
+5>E:\MyVision\HalconControl\CHelper.cs(127,37,127,39): warning CS0168: The variable 'ex' is declared but never used
+5>E:\MyVision\HalconControl\CHelper.cs(152,37,152,39): warning CS0168: The variable 'ex' is declared but never used
+5>E:\MyVision\HalconControl\HWindow_fit.cs(1159,44,1159,46): warning CS0168: The variable 'ex' is declared but never used
+5>E:\MyVision\HalconControl\HWindow_fit.cs(1219,30,1219,32): warning CS0168: The variable 'ex' is declared but never used
+5>E:\MyVision\HalconControl\HWindow_fit.cs(39,36,39,49): warning CS0414: The field 'HWindow_Fit.b_rightButton' is assigned but its value is never used
+5>  HalconControl -> E:\MyVision\000_exe\myshowControl.dll
+4>E:\MyVision\VisionCore\service\ToolPluginService.cs(83,30,83,32): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\service\CameraPluginService.cs(85,30,85,32): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(57,37,57,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(177,30,177,32): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(456,30,456,32): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(577,30,577,32): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(654,30,654,32): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(698,37,698,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(771,37,771,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(809,37,809,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(1032,37,1032,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(1061,37,1061,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(1170,37,1170,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(1203,37,1203,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(1237,37,1237,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\core\HMeasureSet.cs(1263,37,1263,39): warning CS0168: The variable 'ex' is declared but never used
+4>E:\MyVision\VisionCore\cameras\AcqAreaDeviceBase.cs(45,24,45,32): warning CS0169: The field 'AcqAreaDeviceBase.m_remark' is never used
+4>E:\MyVision\VisionCore\cameras\AcqAreaDeviceBase.cs(28,22,28,33): warning CS0169: The field 'AcqAreaDeviceBase._IsNewImage' is never used
+4>E:\MyVision\VisionCore\cameras\AcqAreaDeviceBase.cs(21,28,21,39): warning CS0169: The field 'AcqAreaDeviceBase._DeviceType' is never used
+4>E:\MyVision\VisionCore\core\project\Solution.cs(44,24,44,28): warning CS0169: The field 'Solution.name' is never used
+4>E:\MyVision\VisionCore\cameras\AcqAreaDeviceBase.cs(125,24,125,31): warning CS0414: The field 'AcqAreaDeviceBase.dScaleY' is assigned but its value is never used
+4>E:\MyVision\VisionCore\core\Solution_Struct_Info.cs(468,25,468,45): warning CS0414: The field 'F_DATA_CELL._bUserDefineVariable' is assigned but its value is never used
+4>E:\MyVision\VisionCore\cameras\AcqAreaDeviceBase.cs(115,24,115,31): warning CS0414: The field 'AcqAreaDeviceBase.dScaleX' is assigned but its value is never used
+4>  VisionCore -> E:\MyVision\000_exe\VisionCore.dll
+7>------ 已启动全部重新生成: 项目: Plugin.AcqModule, 配置: Debug Any CPU ------
+7>E:\MyVision\Plugin\Plugin.AcqModule\service\AcqModuleObj.cs(83,39,83,41): warning CS0168: The variable 'ex' is declared but never used
+7>E:\MyVision\Plugin\Plugin.AcqModule\ui\AcqModuleForm.cs(105,42,105,44): warning CS0168: The variable 'ex' is declared but never used
+7>  Plugin.AcqModule -> E:\MyVision\000_exe\Plugins\Plugin.AcqModule.dll
+========== 全部重新生成: 成功 7 个，失败 0 个，跳过 0 个 ==========

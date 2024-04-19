@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DDF3244-F788-4076-A361-9C459EE5796E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RexControl</RootNamespace>
+    <AssemblyName>RexControl</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\00 Exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPOI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="visiondotnet, Version=18.11.0.1, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormUI\Btn\UCBtnExt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Btn\UCBtnExt.Designer.cs">
+      <DependentUpon>UCBtnExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\CCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\CCheckBox.designer.cs">
+      <DependentUpon>CCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\CComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\CComboBox.designer.cs">
+      <DependentUpon>CComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Checkbox\UCCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Checkbox\UCCheckBox.Designer.cs">
+      <DependentUpon>UCCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\CNumeric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\CNumeric.designer.cs">
+      <DependentUpon>CNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\CNumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\CNumericUpDown.designer.cs">
+      <DependentUpon>CNumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\ComboBox\UCCombox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\ComboBox\UCCombox.Designer.cs">
+      <DependentUpon>UCCombox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlHelp\ControlHelper.cs" />
+    <Compile Include="ControlHelp\Ext.cs" />
+    <Compile Include="ControlHelp\NativeMethods.cs" />
+    <Compile Include="FormUI\CRadioBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\CRadioBox.designer.cs">
+      <DependentUpon>CRadioBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\DateTimes\UCTimePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\DateTimes\UCTimePanel.Designer.cs">
+      <DependentUpon>UCTimePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Text\CLikeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Text\CLikeText.Designer.cs">
+      <DependentUpon>CLikeText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Text\CTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Text\CTextBox.designer.cs">
+      <DependentUpon>CTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\ChangeFormatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\ChangeFormatControl.Designer.cs">
+      <DependentUpon>ChangeFormatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\MeanImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\MeanImageControl.Designer.cs">
+      <DependentUpon>MeanImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\MedianImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\MedianImageControl.Designer.cs">
+      <DependentUpon>MedianImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\GaussImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\GaussImageControl.Designer.cs">
+      <DependentUpon>GaussImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\GrayErosionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\GrayErosionControl.Designer.cs">
+      <DependentUpon>GrayErosionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\GrayDilationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\GrayDilationControl.Designer.cs">
+      <DependentUpon>GrayDilationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\MirrorImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\MirrorImageControl.Designer.cs">
+      <DependentUpon>MirrorImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\OpeningControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\OpeningControl.Designer.cs">
+      <DependentUpon>OpeningControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\ClosingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\ClosingControl.Designer.cs">
+      <DependentUpon>ClosingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\EmphaSizeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\EmphaSizeControl.Designer.cs">
+      <DependentUpon>EmphaSizeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\IlluminateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\IlluminateControl.Designer.cs">
+      <DependentUpon>IlluminateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\RotateImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\RotateImageControl.Designer.cs">
+      <DependentUpon>RotateImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\ScaleImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\ScaleImageControl.Designer.cs">
+      <DependentUpon>ScaleImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\InvertImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\InvertImageControl.Designer.cs">
+      <DependentUpon>InvertImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\ThresholdControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\ThresholdControl.Designer.cs">
+      <DependentUpon>ThresholdControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\TransFromRgbControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\TransFromRgbControl.Designer.cs">
+      <DependentUpon>TransFromRgbControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSetting\VarThresholdControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetSetting\VarThresholdControl.Designer.cs">
+      <DependentUpon>VarThresholdControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Split\UCSplitLine_H.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Split\UCSplitLine_H.Designer.cs">
+      <DependentUpon>UCSplitLine_H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Split\UCSplitLine_V.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Split\UCSplitLine_V.Designer.cs">
+      <DependentUpon>UCSplitLine_V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Text\KeyBoardType.cs" />
+    <Compile Include="FormUI\Text\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormUI\Text\TextBoxEx.Designer.cs">
+      <DependentUpon>TextBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\Text\TextBoxTransparent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormUI\Text\TextInputType.cs" />
+    <Compile Include="FormUI\Text\UCNumTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\Text\UCNumTextBox.Designer.cs">
+      <DependentUpon>UCNumTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI\UCControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormUI\UCControlBase.Designer.cs">
+      <DependentUpon>UCControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControl\Events.cs" />
+    <Compile Include="TabControl\NativeMethods.cs" />
+    <Compile Include="TabControl\CTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormUI\Btn\UCBtnExt.resx">
+      <DependentUpon>UCBtnExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\CCheckBox.resx">
+      <DependentUpon>CCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\CComboBox.resx">
+      <DependentUpon>CComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\Checkbox\UCCheckBox.resx">
+      <DependentUpon>UCCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\CNumeric.resx">
+      <DependentUpon>CNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\CNumericUpDown.resx">
+      <DependentUpon>CNumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\ComboBox\UCCombox.resx">
+      <DependentUpon>UCCombox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\CRadioBox.resx">
+      <DependentUpon>CRadioBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\Text\CLikeText.resx">
+      <DependentUpon>CLikeText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\Text\CTextBox.resx">
+      <DependentUpon>CTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\ChangeFormatControl.resx">
+      <DependentUpon>ChangeFormatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\MeanImageControl.resx">
+      <DependentUpon>MeanImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\MedianImageControl.resx">
+      <DependentUpon>MedianImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\GaussImageControl.resx">
+      <DependentUpon>GaussImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\GrayErosionControl.resx">
+      <DependentUpon>GrayErosionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\GrayDilationControl.resx">
+      <DependentUpon>GrayDilationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\MirrorImageControl.resx">
+      <DependentUpon>MirrorImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\OpeningControl.resx">
+      <DependentUpon>OpeningControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\ClosingControl.resx">
+      <DependentUpon>ClosingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\EmphaSizeControl.resx">
+      <DependentUpon>EmphaSizeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\IlluminateControl.resx">
+      <DependentUpon>IlluminateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\RotateImageControl.resx">
+      <DependentUpon>RotateImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\ScaleImageControl.resx">
+      <DependentUpon>ScaleImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\InvertImageControl.resx">
+      <DependentUpon>InvertImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\ThresholdControl.resx">
+      <DependentUpon>ThresholdControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\TransFromRgbControl.resx">
+      <DependentUpon>TransFromRgbControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSetting\VarThresholdControl.resx">
+      <DependentUpon>VarThresholdControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI\Text\UCNumTextBox.resx">
+      <DependentUpon>UCNumTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\blueAdd.png" />
+    <Content Include="Resources\BlueImage.png" />
+    <Content Include="Resources\blueSub.png" />
+    <Content Include="Resources\ButtonDown.png" />
+    <Content Include="Resources\ButtonEnter.png" />
+    <Content Include="Resources\ButtonUp.png" />
+    <Content Include="Resources\checkbox10.png" />
+    <Content Include="Resources\grayAdd.png" />
+    <Content Include="Resources\GrayImage.png" />
+    <Content Include="Resources\graySub.png" />
+    <Content Include="Resources\Hide.png" />
+    <Content Include="Resources\Show.png" />
+    <Content Include="Resources\勾选.png" />
+    <Content Include="Resources\去勾选.png" />
+    <Content Include="Resources\去复选框.png" />
+    <Content Include="Resources\复选框.png" />
+    <None Include="Resources\照片搜索.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\02 Main\RexHelps\RexHelps.csproj">
+      <Project>{926397D3-28DC-4F5F-A37E-BA8FEF9D6966}</Project>
+      <Name>RexHelps</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DBDA2DF-F8F6-4C03-B182-823218E33713}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RexVision</RootNamespace>
+    <AssemblyName>RexVision</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\00 Exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Rex1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="RexUI, Version=2.2.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\RexUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\dll\SharpDX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\dll\SharpDX.Direct2D1.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\dll\SharpDX.DXGI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VisionCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\VisionCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="visiondotnet, Version=18.11.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\visiondotnet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WinFormsUI, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\WinFormsUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet\VisionSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet\VisionSet.Designer.cs">
+      <DependentUpon>VisionSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmFeedback.Designer.cs">
+      <DependentUpon>FrmFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmLock.Designer.cs">
+      <DependentUpon>FrmLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="FrmSet\CanvasView.cs" />
+    <Compile Include="FrmSet\CanvasView.designer.cs">
+      <DependentUpon>CanvasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet\NetSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet\NetSet.designer.cs">
+      <DependentUpon>NetSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmNet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmNet.designer.cs">
+      <DependentUpon>FrmNet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmCanvas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmCanvas.designer.cs">
+      <DependentUpon>FrmCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmData.designer.cs">
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmLog.designer.cs">
+      <DependentUpon>FrmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmTool.designer.cs">
+      <DependentUpon>FrmTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmProj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmProj.designer.cs">
+      <DependentUpon>FrmProj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShow\FrmShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShow\FrmShow.Designer.cs">
+      <DependentUpon>FrmShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet\CameraSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet\CameraSet.Designer.cs">
+      <DependentUpon>CameraSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet\CanvasSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet\CanvasSet.Designer.cs">
+      <DependentUpon>CanvasSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmSet\VarSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet\VarSet.Designer.cs">
+      <DependentUpon>VarSet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet\CanvasView.resx">
+      <DependentUpon>CanvasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet\NetSet.resx">
+      <DependentUpon>NetSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet\VisionSet.resx">
+      <DependentUpon>VisionSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmFeedback.resx">
+      <DependentUpon>FrmFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmLock.resx">
+      <DependentUpon>FrmLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmNet.resx">
+      <DependentUpon>FrmNet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmCanvas.resx">
+      <DependentUpon>FrmCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmData.resx">
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmLog.resx">
+      <DependentUpon>FrmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmTool.resx">
+      <DependentUpon>FrmTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmProj.resx">
+      <DependentUpon>FrmProj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShow\FrmShow.resx">
+      <DependentUpon>FrmShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet\CameraSet.resx">
+      <DependentUpon>CameraSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet\CanvasSet.resx">
+      <DependentUpon>CanvasSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet\VarSet.resx">
+      <DependentUpon>VarSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\03 Control\RexControl\RexControl.csproj">
+      <Project>{2DDF3244-F788-4076-A361-9C459EE5796E}</Project>
+      <Name>RexControl</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03 Control\RexViewer\RexView.csproj">
+      <Project>{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}</Project>
+      <Name>RexView</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RexConst\RexConst.csproj">
+      <Project>{5a171807-e17c-4a18-9732-357c73a366c9}</Project>
+      <Name>RexConst</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RexHelps\RexHelps.csproj">
+      <Project>{926397d3-28dc-4f5f-a37e-ba8fef9d6966}</Project>
+      <Name>RexHelps</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Rex1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".cfg">
+      <Visible>False</Visible>
+      <Description>Vision</Description>
+      <Progid>1</Progid>
+      <DefaultIcon>视觉智能＊.png</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

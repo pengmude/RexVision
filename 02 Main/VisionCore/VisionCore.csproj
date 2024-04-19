@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D34FCD67-42E3-4D3A-89B7-65BC8416A550}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VisionCore</RootNamespace>
+    <AssemblyName>VisionCore</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\00 Exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>1024</FileAlignment>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gCursor, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\gCursor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RexConst, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\RexConst.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RexControl, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\RexControl.dll</HintPath>
+    </Reference>
+    <Reference Include="RexHelps, Version=1.2.17.223, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\RexHelps.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RexUI, Version=2.2.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\RexUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RexView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\RexView.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\dll\SharpDX.Direct2D1.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\dll\SharpDX.DXGI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="visiondotnet, Version=18.11.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\visiondotnet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WinFormsUI, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\00 Exe\WinFormsUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cameras\CamerasBase.cs" />
+    <Compile Include="Cameras\CamerasInfo.cs" />
+    <Compile Include="Comm\EComInfo.cs" />
+    <Compile Include="Comm\EComManageer.cs" />
+    <Compile Include="Comm\ECommunacation.cs" />
+    <Compile Include="Comm\SerialPort\MySerialPort.cs" />
+    <Compile Include="Comm\Socket\Command.cs" />
+    <Compile Include="Comm\Socket\DMTcpClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comm\Socket\DMTcpServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comm\Socket\DMUdpClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comm\Socket\IDataCell.cs" />
+    <Compile Include="Comm\Socket\MsgCell.cs" />
+    <Compile Include="Comm\Socket\MsgType.cs" />
+    <Compile Include="Comm\Socket\MsgTypeCell.cs" />
+    <Compile Include="Comm\Socket\ReceiveDataEventArgs.cs" />
+    <Compile Include="Comm\Socket\ReceiveDataEventHandler.cs" />
+    <Compile Include="Comm\Socket\ResponeTraFransfersFile.cs" />
+    <Compile Include="Comm\Socket\SerHelper.cs" />
+    <Compile Include="Comm\Socket\SocketError.cs" />
+    <Compile Include="Comm\Socket\SocketState.cs" />
+    <Compile Include="Comm\Socket\UdpLibrary.cs" />
+    <Compile Include="Comm\Tool\HexTool.cs" />
+    <Compile Include="Comm\NetContorl\NetBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comm\NetContorl\NetBase.Designer.cs">
+      <DependentUpon>NetBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comm\NetContorl\ComControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comm\NetContorl\ComControl.Designer.cs">
+      <DependentUpon>ComControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comm\NetContorl\TcpControlC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comm\NetContorl\TcpControlC.Designer.cs">
+      <DependentUpon>TcpControlC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comm\NetContorl\TcpControlS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comm\NetContorl\TcpControlS.Designer.cs">
+      <DependentUpon>TcpControlS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comm\NetContorl\UDPControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comm\NetContorl\UDPControl.Designer.cs">
+      <DependentUpon>UDPControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\HMeas3D.cs" />
+    <Compile Include="Core\PluginBase\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\PluginBase\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\PluginBase\ObjBase.cs" />
+    <Compile Include="Core\Project\DataIn.cs" />
+    <Compile Include="Core\Project\DataOut.cs" />
+    <Compile Include="Core\Project\ProjStruct.cs" />
+    <Compile Include="Core\HTimer.cs" />
+    <Compile Include="Core\ScriptMethodsDescription.cs" />
+    <Compile Include="Core\Vision.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\RexMeas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SolForm\RexMeas.Designer.cs">
+      <DependentUpon>RexMeas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\SolSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolForm\SolSetForm.Designer.cs">
+      <DependentUpon>SolSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\ProjSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolForm\ProjSetForm.Designer.cs">
+      <DependentUpon>ProjSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\ModuleFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SolForm\ModuleFlow.designer.cs">
+      <DependentUpon>ModuleFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\ModuleFlowItem.cs" />
+    <Compile Include="SolForm\ModuleTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SolForm\ModuleTree.designer.cs">
+      <DependentUpon>ModuleTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\LinkDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolForm\LinkDataForm.Designer.cs">
+      <DependentUpon>LinkDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolForm\ProjectTab.cs" />
+    <Compile Include="SolForm\SharedClass.cs" />
+    <Compile Include="SolForm\SharpDXTool.cs" />
+    <Compile Include="SolForm\SolutionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SolForm\SolutionView.Designer.cs">
+      <DependentUpon>SolutionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\BtnTools.cs" />
+    <Compile Include="Tools\ShowMsg.cs" />
+    <Compile Include="Tools\IntPtrTool.cs" />
+    <Compile Include="Log4Net\ListViewBaseAppender.cs" />
+    <Compile Include="Log4Net\Log.cs" />
+    <Compile Include="Log4Net\Log4Net.cs" />
+    <Compile Include="Service\PluginCamService.cs" />
+    <Compile Include="Core\Project\ProjEnum.cs" />
+    <Compile Include="Core\Func.cs" />
+    <Compile Include="Core\Project\Proj.cs" />
+    <Compile Include="Core\Project\Sol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Project\SolInfo.cs" />
+    <Compile Include="Service\PluginToolService.cs" />
+    <Compile Include="Tools\CloneObject.cs" />
+    <EmbeddedResource Include="Comm\NetContorl\NetBase.resx">
+      <DependentUpon>NetBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comm\NetContorl\ComControl.resx">
+      <DependentUpon>ComControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comm\NetContorl\TcpControlC.resx">
+      <DependentUpon>TcpControlC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comm\NetContorl\TcpControlS.resx">
+      <DependentUpon>TcpControlS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comm\NetContorl\UDPControl.resx">
+      <DependentUpon>UDPControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\PluginBase\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\RexMeas.resx">
+      <DependentUpon>RexMeas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\SolSetForm.resx">
+      <DependentUpon>SolSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\ProjSetForm.resx">
+      <DependentUpon>ProjSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\ModuleFlow.resx">
+      <DependentUpon>ModuleFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\ModuleTree.resx">
+      <DependentUpon>ModuleTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\LinkDataForm.resx">
+      <DependentUpon>LinkDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolForm\SolutionView.resx">
+      <DependentUpon>SolutionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bianliang.png" />
+    <Content Include="Resources\else.ico" />
+    <Content Include="Resources\elseif.ico" />
+    <Content Include="Resources\end.ico" />
+    <Content Include="Resources\endfor.ico" />
+    <Content Include="Resources\if.ico" />
+    <Content Include="Resources\ifend.ico" />
+    <None Include="Resources\Rex1.png" />
+    <Content Include="Resources\ng.png" />
+    <Content Include="Resources\ok.png" />
+    <Content Include="Resources\unuse.png" />
+    <Content Include="Resources\_for.ico" />
+    <Content Include="Resources\图像采集.ico" />
+    <Content Include="Resources\工具箱_32.ico" />
+    <Content Include="Resources\文件夹32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
